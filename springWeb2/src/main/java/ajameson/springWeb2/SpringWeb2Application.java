@@ -24,11 +24,11 @@ public class SpringWeb2Application {
 		PropertyInjectionController propertyInjectionController = (PropertyInjectionController) ctx.getBean("propertyInjectionController");
 		System.out.println(propertyInjectionController.sayGreeting());
 
-		System.out.println("-------------Setter");
+		System.out.println("---------------Setter");
 		SetterInjectionController setterInjectionController = (SetterInjectionController) ctx.getBean("setterInjectionController");
 		System.out.println(setterInjectionController.sayGreeting());
 
-		System.out.println("-------------Constructor");
+		System.out.println("------------Constructor");
 		ConstructorInjectionController constructorInjectionController = (ConstructorInjectionController) ctx.getBean("constructorInjectionController");
 		System.out.println(constructorInjectionController.sayGreeting());
 
