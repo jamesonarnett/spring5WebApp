@@ -8,12 +8,13 @@ import static org.junit.jupiter.api.Assertions.*;
 
 class PropertyInjectionControllerTest {
 
+    //least preferred method of implementation
+
     PropertyInjectionController controller;
 
     @BeforeEach
     void setUp() {
         controller = new PropertyInjectionController();
-
         controller.greetingService = new GreetingServiceImpl();
     }
 

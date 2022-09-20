@@ -8,6 +8,8 @@ import static org.junit.jupiter.api.Assertions.*;
 
 class SetterInjectionControllerTest {
 
+    //Okay, but not ideal implementation.
+
     SetterInjectionController controller;
 
     @BeforeEach
