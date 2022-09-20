@@ -1,0 +1,240 @@
+@startuml
+
+/' diagram meta data start
+config=CallConfiguration;
+{
+  "rootMethod": "ajameson.springWeb2.services.I18nSpanishGreetingSerivce#sayGreeting()",
+  "projectClassification": {
+    "searchMode": "OpenProject", // OpenProject, AllProjects
+    "includedProjects": "",
+    "pathEndKeywords": "*.impl",
+    "isClientPath": "",
+    "isClientName": "",
+    "isTestPath": "",
+    "isTestName": "",
+    "isMappingPath": "",
+    "isMappingName": "",
+    "isDataAccessPath": "",
+    "isDataAccessName": "",
+    "isDataStructurePath": "",
+    "isDataStructureName": "",
+    "isInterfaceStructuresPath": "",
+    "isInterfaceStructuresName": "",
+    "isEntryPointPath": "",
+    "isEntryPointName": "",
+    "treatFinalFieldsAsMandatory": false
+  },
+  "graphRestriction": {
+    "classPackageExcludeFilter": "",
+    "classPackageIncludeFilter": "",
+    "classNameExcludeFilter": "",
+    "classNameIncludeFilter": "",
+    "methodNameExcludeFilter": "",
+    "methodNameIncludeFilter": "",
+    "removeByInheritance": "", // inheritance/annotation based filtering is done in a second step
+    "removeByAnnotation": "",
+    "removeByClassPackage": "", // cleanup the graph after inheritance/annotation based filtering is done
+    "removeByClassName": "",
+    "cutMappings": false,
+    "cutEnum": true,
+    "cutTests": true,
+    "cutClient": true,
+    "cutDataAccess": true,
+    "cutInterfaceStructures": true,
+    "cutDataStructures": true,
+    "cutGetterAndSetter": true,
+    "cutConstructors": true
+  },
+  "graphTraversal": {
+    "forwardDepth": 3,
+    "backwardDepth": 3,
+    "classPackageExcludeFilter": "",
+    "classPackageIncludeFilter": "",
+    "classNameExcludeFilter": "",
+    "classNameIncludeFilter": "",
+    "methodNameExcludeFilter": "",
+    "methodNameIncludeFilter": "",
+    "hideMappings": false,
+    "hideDataStructures": false,
+    "hidePrivateMethods": true,
+    "hideInterfaceCalls": true, // indirection: implementation -> interface (is hidden) -> implementation
+    "onlyShowApplicationEntryPoints": false, // root node is included
+    "useMethodCallsForStructureDiagram": "ForwardOnly" // ForwardOnly, BothDirections, No
+  },
+  "details": {
+    "aggregation": "GroupByClass", // ByClass, GroupByClass, None
+    "showMethodParametersTypes": false,
+    "showMethodParametersNames": false,
+    "showMethodReturnType": false,
+    "showPackageLevels": 2,
+    "showCallOrder": false,
+    "edgeMode": "MethodsOnly", // TypesOnly, MethodsOnly, TypesAndMethods, MethodsAndDirectTypeUsage
+    "showDetailedClassStructure": false
+  },
+  "rootClass": "ajameson.springWeb2.services.I18nSpanishGreetingSerivce",
+  "extensionCallbackMethod": "" // qualified.class.name#methodName - signature: public static String method(String)
+}
+diagram meta data end '/
+
+
+
+digraph g {
+    rankdir="LR"
+    splines=polyline
+    
+
+'nodes 
+subgraph cluster_1361856267 { 
+   	label=springWeb2
+	labeljust=l
+	fillcolor="#ececec"
+	style=filled
+   
+   subgraph cluster_1371868082 { 
+   	label=SpringWeb2Application
+	labeljust=l
+	fillcolor=white
+	style=filled
+   
+   SpringWeb2Application1559558697XXXmain1859653459[
+	label="+ main()"
+	style=filled
+	fillcolor=white
+	tooltip="SpringWeb2Application
+
+null"
+	fontcolor=darkgreen
+];
+} 
+
+subgraph cluster_2125146636 { 
+   	label=controllers
+	labeljust=l
+	fillcolor="#d8d8d8"
+	style=filled
+   
+   subgraph cluster_1416225424 { 
+   	label=PropertyInjectionController
+	labeljust=l
+	fillcolor=white
+	style=filled
+   
+   PropertyInjectionController1164952256XXXsayGreeting0[
+	label="+ sayGreeting()"
+	style=filled
+	fillcolor=white
+	tooltip="PropertyInjectionController
+
+null"
+	fontcolor=darkgreen
+];
+} 
+
+subgraph cluster_1566034694 { 
+   	label=SetterInjectionController
+	labeljust=l
+	fillcolor=white
+	style=filled
+   
+   SetterInjectionController1164952256XXXsayGreeting0[
+	label="+ sayGreeting()"
+	style=filled
+	fillcolor=white
+	tooltip="SetterInjectionController
+
+null"
+	fontcolor=darkgreen
+];
+} 
+
+subgraph cluster_2132052632 { 
+   	label=I18nController
+	labeljust=l
+	fillcolor=white
+	style=filled
+   
+   I18nController1164952256XXXsayHello0[
+	label="+ sayHello()"
+	style=filled
+	fillcolor=white
+	tooltip="I18nController
+
+null"
+	fontcolor=darkgreen
+];
+} 
+
+subgraph cluster_274984583 { 
+   	label=ConstructorInjectionController
+	labeljust=l
+	fillcolor=white
+	style=filled
+   
+   ConstructorInjectionController1164952256XXXsayGreeting0[
+	label="+ sayGreeting()"
+	style=filled
+	fillcolor=white
+	tooltip="ConstructorInjectionController
+
+null"
+	fontcolor=darkgreen
+];
+} 
+
+subgraph cluster_386573578 { 
+   	label=MyController
+	labeljust=l
+	fillcolor=white
+	style=filled
+   
+   MyController1164952256XXXsayHello0[
+	label="+ sayHello()"
+	style=filled
+	fillcolor=white
+	tooltip="MyController
+
+null"
+	fontcolor=darkgreen
+];
+} 
+} 
+
+subgraph cluster_341604321 { 
+   	label=services
+	labeljust=l
+	fillcolor="#d8d8d8"
+	style=filled
+   
+   subgraph cluster_450881671 { 
+   	label=I18nSpanishGreetingSerivce
+	labeljust=l
+	fillcolor=white
+	style=filled
+   
+   I18nSpanishGreetingSerivce683253397XXXsayGreeting0[
+	label="+ sayGreeting()"
+	style=filled
+	fillcolor=white
+	tooltip="I18nSpanishGreetingSerivce
+
+null"
+	penwidth=4
+	fontcolor=darkgreen
+];
+} 
+} 
+} 
+
+'edges    
+ConstructorInjectionController1164952256XXXsayGreeting0 -> I18nSpanishGreetingSerivce683253397XXXsayGreeting0;
+I18nController1164952256XXXsayHello0 -> I18nSpanishGreetingSerivce683253397XXXsayGreeting0;
+MyController1164952256XXXsayHello0 -> I18nSpanishGreetingSerivce683253397XXXsayGreeting0;
+PropertyInjectionController1164952256XXXsayGreeting0 -> I18nSpanishGreetingSerivce683253397XXXsayGreeting0;
+SetterInjectionController1164952256XXXsayGreeting0 -> I18nSpanishGreetingSerivce683253397XXXsayGreeting0;
+SpringWeb2Application1559558697XXXmain1859653459 -> ConstructorInjectionController1164952256XXXsayGreeting0;
+SpringWeb2Application1559558697XXXmain1859653459 -> MyController1164952256XXXsayHello0;
+SpringWeb2Application1559558697XXXmain1859653459 -> PropertyInjectionController1164952256XXXsayGreeting0;
+SpringWeb2Application1559558697XXXmain1859653459 -> SetterInjectionController1164952256XXXsayGreeting0;
+    
+}
+@enduml

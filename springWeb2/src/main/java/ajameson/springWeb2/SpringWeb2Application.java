@@ -1,9 +1,6 @@
 package ajameson.springWeb2;
 
-import ajameson.springWeb2.controllers.ConstructorInjectionController;
-import ajameson.springWeb2.controllers.MyController;
-import ajameson.springWeb2.controllers.PropertyInjectionController;
-import ajameson.springWeb2.controllers.SetterInjectionController;
+import ajameson.springWeb2.controllers.*;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.ApplicationContext;
@@ -15,6 +12,9 @@ public class SpringWeb2Application {
 
 		ApplicationContext ctx = SpringApplication.run(SpringWeb2Application.class, args);
 		MyController myController = (MyController) ctx.getBean("myController");
+
+		I18nController i18nController = (I18nController) ctx.getBean("i18nController");
+		System.out.println(i18nController.sayHello());
 
 		System.out.println("-------------Primary Bean");
 		System.out.println(myController.sayHello());
